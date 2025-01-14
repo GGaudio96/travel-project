@@ -1,4 +1,31 @@
 h1 {
     font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
-    ;
+    font-size: 66px;
+}
+
+header {
+    max-width: 1900px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(253, 253, 253, 0.6), rgba(253, 253, 253, 0.6)), url(../images/headerpic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 140px 0;
+    text-align: center;
+    color: rgb(64, 56, 105);
+}
+
+header a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: #272044;
+    padding: 16px 32px;
+    margin-top: 32px;
+    display: inline-block;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: white;
 }
