@@ -11,6 +11,7 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 64px;
 }
 
 h1 {
@@ -18,9 +19,47 @@ h1 {
     font-size: 66px;
 }
 
+main {
+    background-color: rgb(200, 189, 206);
+}
+
+main h2 {
+    font-size: 26px;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    color: var(--fontcolor);
+}
+
+main h3 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    color: var(--fontcolor);
+}
+
+main p {
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    color: var(--fontcolor);
+}
+
 section {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+section.history {
+    padding: 80px 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+section.history img {
+    max-width: 500px;
+    border-radius: 3px;
+
 }
 
 header {
