@@ -1,6 +1,26 @@
+:root {
+    --fontcolor: #272044;
+    --lucidagrande: Lucida Grande,
+        Lucida Sans Unicode,
+        Lucida Sans,
+        Geneva,
+        Verdana,
+        sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
 h1 {
     font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
     font-size: 66px;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
@@ -28,4 +48,39 @@ header a {
     text-decoration: none;
     text-transform: uppercase;
     background: white;
+}
+
+footer h3 {
+    color: var(--fontcolor1);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+
+}
+
+footer p {
+    color: var(--fontcolor);
+    font-family: var(--lucidagrande);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    color: var(--fontcolor);
+    opacity: 0.7;
+}
+
+footer {
+    color: #272044;
+    background-image: linear-gradient(rgba(253, 253, 253, 0.6), rgba(253, 253, 253, 0.6)), url(../images/istanbulfooter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: var(--lucidagrande);
+
+
 }
