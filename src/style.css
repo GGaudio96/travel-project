@@ -71,6 +71,10 @@ section.places {
 
 }
 
+.card-header.grid {
+    grid-gap: 0;
+}
+
 header {
     max-width: 1900px;
     margin: 0 auto;
