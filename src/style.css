@@ -14,6 +14,76 @@
     grid-gap: 64px;
 }
 
+.img-responsive {
+    width: 100%;
+    display: block;
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+.embed {
+    width: 100%;
+    aspect-ratio: 1 /1;
+}
+
+.instagram-embeds {
+    margin: 30px 0;
+}
+
+.card {
+    background: white;
+    margin: 30px 0;
+}
+
+.card-header.grid {
+    grid-gap: 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-footer {
+    padding: 0 30px 30px;
+}
+
+.btn {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color: #462cb3;
+    text-decoration: none;
+}
+
+section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+section.secondary {
+    background: #f8f8f8;
+}
+
+
+
+
 h1 {
     font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
     font-size: 66px;
@@ -62,18 +132,38 @@ section.history img {
 
 }
 
-section.places {
-    padding: 150px 80px 150px;
+
+.grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr 1fr 1fr;
+
+
 }
+
 
 .grid-3-columns {
     grid-template-columns: 1fr 1fr 1fr;
-
 }
 
-.card-header.grid {
-    grid-gap: 0;
+.grid {
+    display: grid;
+    grid-gap: 64px;
 }
+
+.img-responsive {
+    max-width: 100%;
+    display: block;
+}
+
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-responsive {
+    width: 100%;
+    display: block;
+}
+
 
 header {
     max-width: 1900px;
@@ -135,4 +225,40 @@ footer {
     font-family: var(--lucidagrande);
 
 
+}
+
+
+@media (max-width: 960px) {
+    header {
+        padding: 60px 0;
+    }
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header h3 {
+        font-size: 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    .card-header img {
+        display: none;
+    }
+
+    .embed {
+        aspect-ratio: 16 / 9;
+    }
 }
